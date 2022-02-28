@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  font-family: "Balsamiq Sans", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(111, 111, 111); */
+  /* color: white; */
+}
+
+/* Utility stylings */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.relative {
+  position: relative;
+}
+
+/* nav elements */
+.nav {
+  background-color: rgb(0, 0, 0);
+  min-height: 80px;
+}
+
+.nav-container {
+  justify-content: space-between;
+  /* background-color: orange; */
+  min-height: 80px;
+  width: 1230px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  font-size: 36px;
+  font-weight: normal;
+  color: white;
+}
+
+.nav-links {
+  flex: 2;
+  /* background-color: blue; */
+  justify-content: flex-start;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+.nav-links li {
+  padding-left: 30px;
+}
+
+.nav-links a {
+  color: rgb(193, 193, 193);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+span {
+  /* font-weight: bold; */
+  color: rgb(228, 228, 228);
+}
+
+#sign-out {
+  width: 100px;
+  height: 36px;
+  box-shadow: 5px 5px black;
+  color: white;
+  background-color: rgb(0, 153, 175);
+  font-size: 22px;
+  border-color: black;
+  /* border: none; */
+}
+
+/* main elements */
+.main {
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: green; */
+  min-height: 600px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* main left elements */
+.main-left {
+  /* background-color: purple; */
+  min-height: 600px;
+  margin-right: 30px;
+  /* flex: 2; */
+}
+
+.profile-card {
+  /* background-color: red; */
+  min-height: 400px;
+  width: 800px;
+}
+
+.user-photo {
+  width: 120px;
+  height: 120px;
+  border: 6px solid lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.top-bar {
+  background-color: rgb(0, 153, 175);
+  min-height: 100px;
+}
+
+.lower-bar {
+  background-color: white;
+  min-height: 300px;
+  border-bottom: 6px solid lightgray;
+  border-left: 6px solid lightgray;
+  border-right: 6px solid lightgray;
+  padding-top: 70px;
+}
+
+.lower-bar h1 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.location h2 {
+  margin-left: 12px;
+}
+
+.map-icon {
+  width: 15px;
+}
+
+.user-skills h3 {
+  font-size: 18px;
+}
+
+.settings-gear-icon {
+  width: 25px;
+}
+
+a {
+  color: rgb(19, 107, 223);
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 12px;
+}
+
+/* Education */
+.education-card {
+  width: 800px;
+  background-color: white;
+  min-height: 200px;
+  border-left: 6px solid lightgray;
+  border-right: 6px solid lightgray;
+  border-bottom: 6px solid lightgray;
+}
+
+.sub-header {
+  background-color: black;
+  min-height: 50px;
+  font-weight: normal;
+  color: white;
+  padding-left: 30px;
+  padding-top: 15px;
+  border-left: 6px solid black;
+  border-right: 6px solid black;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.edu-date {
+  color: gray;
+  font-weight: normal;
+}
+
+.edu-description {
+  font-weight: normal;
+}
+
+/* main right elements */
+.main-right {
+  /* background-color: rgb(177, 92, 1); */
+  min-height: 600px;
+  /* flex: 1; */
+}
+
+/* Connection Requests */
+.conreq-container {
+  background-color: rgb(255, 255, 255);
+  height: 260px;
+  width: 400px;
+  padding-bottom: 2px;
+  border-left: 6px solid lightgray;
+  border-right: 6px solid lightgray;
+  border-bottom: 6px solid lightgray;
+}
+
+.conreq-header {
+  background-color: black;
+  min-height: 70px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-left: 6px solid black;
+  border-right: 6px solid black;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.conreq-counter {
+  background-color: lightgray;
+  color: black;
+  font-weight: normal;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.conreq-title {
+  font-weight: normal;
+  font-size: 25px;
+  color: white;
+}
+
+.conreq-list-container {
+  /* background-color: aquamarine; */
+  min-height: 60px;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.conreq-user-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.conreq-list-container h2 {
+  /* padding-left: 6px; */
+  flex: 2;
+  margin-left: 5px;
+}
+
+.reqcon-button {
+  background-image: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+}
+
+#accept img {
+  width: 35px;
+}
+
+#cancel img {
+  width: 35px;
+}
+
+/* Connections */
+.connections {
+  background-color: white;
+  width: 400px;
+  min-height: 450px;
+  border-left: 6px solid lightgray;
+  border-right: 6px solid lightgray;
+  border-bottom: 6px solid lightgray;
+}
+
+.conns-header {
+  background-color: black;
+  min-height: 80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-left: 6px solid black;
+  border-right: 6px solid black;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.conns-counter {
+  background-color: lightgray;
+  color: black;
+  font-weight: normal;
+  font-size: 20px;
+  width: 65px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.conns-title {
+  font-weight: normal;
+  font-size: 25px;
+  color: white;
+}
+
+.conns-list-container {
+  /* background-color: aquamarine; */
+  min-height: 60px;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.conns-user-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.conns-list-container h2 {
+  /* padding-left: 6px; */
+  flex: 2;
+  margin-left: 10px;
+}
+
+.conns-view-more-footer {
+  margin-top: 15px;
+  padding-top: 15px;
+  /* background-color: red; */
+  /* min-height: 50px; */
+  border-top: 6px solid lightgray;
+  /* padding-top: 10px; */
+}
+
+.conns-view-more-footer a {
+  font-size: 25px;
+}

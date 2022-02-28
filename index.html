@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craig Burke - Making Connections</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Begin Nav -->
+    <div class="nav mb30">
+      <div class="nav-container flex">
+        <h1 class="nav-logo">Profile</h1>
+        <div class="nav-links">
+          <ul class="flex">
+            <li><a href="">Home</a></li>
+            <li>
+              <a href=""><span>My Profile</span></a>
+            </li>
+            <li><a href="">Find Connections</a></li>
+          </ul>
+        </div>
+        <button id="sign-out" type="submit">Sign Out</button>
+      </div>
+    </div>
+    <!-- End Nav -->
+
+    <!-- Begin Main -->
+    <div class="main flex">
+
+      <!-- Begin Main Left -->
+      <div class="main-left">
+
+        <!-- Begin Profile Section -->
+        <div class="profile-card mb30 relative">
+          <!-- Upper blue bar -->
+          <div class="top-bar">
+            <!-- <div class="photo"> -->
+            <img id="user-photo-image"
+              class="user-photo"
+              src="./images/users/jane-m.jpg"
+              alt="user photo"
+            />
+          </div>
+          <!-- Lower White user info bar -->
+          <div class="lower-bar pl30">
+            <h1 id="user-text" class="mb10">Jane Doe</h1>
+            <div class="location flex mb20">
+              <img
+                class="map-icon"
+                src="./images/icons/map-marker.png"
+                alt="map marker"
+              />
+              <h2>Seattle</h2>
+            </div>
+            <div class="user-skills mb20">
+              <h3>Developer | Engineer | Problem Solver</h3>
+              <h3>Master of shadows and the internet!</h3>
+            </div>
+            <div class="settings flex">
+              <img
+                class="settings-gear-icon"
+                src="./images/icons/gear.png"
+                alt="setting gear"
+              />
+              <a onclick="changeText(), changeProfilePict()" href="#" >edit profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Profile Section -->
+
+        <!-- Begin Education Section -->
+        <div class="education-card mb30">
+          <h3 class="sub-header mb20">Education</h3>
+          <div class="edu-content pl30">
+            <h2 class="edu-title mb10">Coding Dojo - Full Stack Bootcamp</h2clas>
+            <h3 class="edu-date mb10">Dec 2019 - Mar 2020</h3>
+            <h3 class="edu-description">Triple black belt in Python, mMERN, and C#...</h3>
+          </div>
+        </div>
+        <!-- End Education Section -->
+      </div>
+      <!-- End Main Left -->
+
+      <!-- Begin Main Right Side -->
+      <div class="main-right">
+
+        <!-- Begin Connection Requests Section -->
+        <div class="conreq-container mb30">
+          <div class="conreq-header flex pl10">
+            <div class="conreq-counter">
+              <h3>2</h3>
+            </div>
+            <h3 class="conreq-title pl10">Connection Requests</h3>
+          </div>
+
+          <!-- Begin the List of connection requests -->
+          <div id="connnection-requests-container" class="conreq-list-container flex mb10 pl10">
+            <img class="conreq-user-img" src="./images/users/todd-s.jpg" alt="connection request user photo">
+            <h2>Todd E</h2>
+            <button id="accept" class="reqcon-button" onclick="removeListItem(this), addConnection(this), removeConnectionRequest(this)"><img src="./images/icons/accept-circle.png" alt="">
+            </button>
+            <button id="cancel" class="reqcon-button"onclick="removeListItem(this), removeConnectionRequest(this)"><img src="./images/icons/close-circle.png" alt=""></button>
+          </div>
+          <!-- put new users below this comment -->
+          <div class="conreq-list-container flex mb20 pl10">
+            <img class="conreq-user-img" src="./images/users/phil-s.jpg" alt="connection request user photo">
+            <h2>Phil K</h2>
+            <button id="accept" class="reqcon-button" onclick="removeListItem(this), addConnection(this), removeConnectionRequest(this)"><img src="./images/icons/accept-circle.png" alt="">
+            </button>
+            <button id="cancel" class="reqcon-button" onclick="removeListItem(this), removeConnectionRequest(this)"><img src="./images/icons/close-circle.png" alt=""></button>
+          </div>
+
+          <!--     -->
+        </div>
+        <!-- End Connection Requests Section -->
+
+        <!-- Begin Connections Section -->
+        <div class="connections">
+          <div class="conns-header flex pl10">
+            <div class="conns-counter">
+              <h3>418+</h3>
+            </div>
+            <h3 class="conns-title pl10">Your Connections</h3>
+          </div>
+
+          <!-- Begin the List of connection request users -->
+          <div class="conns-list-container flex mb10 pl10">
+            <img class="conns-user-img" src="./images/users/adrien-s.jpg" alt="connection request user photo">
+            <h2>Adrien D</h2>
+          </div>
+          <div class="conns-list-container flex mb10 pl10">
+            <img class="conns-user-img" src="./images/users/anne-s.jpg" alt="connection request user photo">
+            <h2>Anne J</h2>
+          </div>
+          <div class="conns-list-container flex mb10 pl10">
+            <img class="conns-user-img" src="./images/users/alayne-s.jpg" alt="connection request user photo">
+            <h2>Alayne T</h2>
+          </div>
+          <div class="conns-list-container flex mb10 pl10">
+            <img class="conns-user-img" src="./images/users/arry-s.jpg" alt="connection request user photo">
+            <h2>Arry Y</h2>
+          </div>
+          <!-- put new users below this comment -->
+          <div class="conns-view-more-footer">
+            <a href="">View More</a>
+          </div>
+            <!--  -->
+        </div>
+      </div>
+    </div>
+    <script src="./makingConnections.js"></script>
+  </body>
+</html>
